@@ -1,13 +1,24 @@
 <html>  
 
-    <button stlye="color: red" onclick=change_thing()>Click Me</button>
-    <img id="cat_gif", style="visibility: none", src="short_converted_video.gif">
+    <button id="button" style="background-color: red;" onclick=change_thing()>Click Me</button>
+    <img id="cat_gif", style="display: none", src="short_converted_video.gif">
+
+    <div id="text" style="display:none">
+        <h3>Happy One Year!</h3>
+        <br>
+        <p>This is what you get for a card since I have no money, but I wanna let you know that I have enjoyed living with you these past few months so much, not only because I would be homeless otherwise, but also because I get to beat you at setters of catan everyday.<br>Love you, <br>Jesse</p>
+    </div>
+    
 </html>
 
 <script>
     function change_thing(){
         gif = document.getElementById("cat_gif")
-        gif.style = "visiblility: visible"
+        button = document.getElementById("button")
+        text = document.getElementById("text")
+        gif.style = "display: inline"
+        button.style = "display: none"
+        text.style= "display: inline"
     }
 
 
