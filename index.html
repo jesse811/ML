@@ -1,11 +1,13 @@
 <html>  
 
     <button stlye="color: red" onclick=change_thing()>Click Me</button>
+    <img id="cat_gif", style="visibility: none", src="short_converted_video.gif">
 </html>
 
 <script>
     function change_thing(){
-
+        gif = document.getElementById("cat_gif")
+        gif.style = "visiblility: visible"
     }
 
 
